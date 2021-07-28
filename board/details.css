@@ -1,0 +1,65 @@
+#detailsContainer {
+    position: relative;
+    display: none;
+
+    position: absolute;
+    width: 445px;
+    height: 590px;
+
+    left: calc((100vw - 600px) / 2);
+    top: 5vh;
+
+    padding: 75px 75px 75px 80px;
+    background: url('img/book.png') no-repeat;
+    background-origin: padding-box;
+    background-size: contain;
+}
+#details {
+    color: black;
+
+    overflow: auto;
+
+    width: 100%;
+    height: 100%;
+}
+
+#detailsContainer .close {
+    position: absolute;
+    top: 15px;
+    right: 40px;
+
+    color: rgb(182, 16, 16);
+    font-size: 40px;
+}
+#detailsContainer .close:hover {
+    cursor: pointer;
+    color: red;
+}
+
+#details .tasks {
+    margin-top: 5px;
+    padding: 0;
+    list-style-type: none;
+}
+#details .tasks ul {
+    overflow: auto;
+    max-height: 20vh;
+}
+#details .tasks > li {
+    margin-top: 15px;
+}
+#details .tasks > li > header {
+    display: block;
+    padding: 5px;
+    height: 20px;
+}
+#details .tasks > li > header > .title {
+    float: left;
+    font-size: 1.3em;
+}
+#details .tasks > li > header > .done {
+    float: right;
+}
+#details .tasks > li > ul {
+    padding: 0px;
+}

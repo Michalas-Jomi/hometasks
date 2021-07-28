@@ -1,0 +1,44 @@
+html {
+    font-size: 16px;
+}
+
+body {
+    background: black;
+    margin: 0;
+}
+
+#container {
+    position: relative;
+    text-align: center;
+
+    margin-left: auto;
+    margin-right: auto;
+
+    width: 1200px;
+    min-height: 100vh;
+    height: max-content;
+    overflow-y: hidden;
+
+
+    background: rgb(93, 97, 91);
+}
+
+#mainfooter {
+    position: absolute;
+    width: 1200px;
+    bottom: 0;
+}
+
+a:visited,
+a:link {
+    color: rgb(33, 179, 171);
+    text-decoration: none;
+}
+a:hover {
+    color: rgb(35, 218, 208);
+    border-color: rgb(35, 218, 208);
+}
+a:active {
+    color: rgb(0, 255, 242);
+    border-color: rgb(0, 255, 242);
+}

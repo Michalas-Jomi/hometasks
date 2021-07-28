@@ -1,0 +1,54 @@
+html {
+    font-size: 26px;
+}
+
+#loginContainer {
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#loginContainer .inputtext {
+    display: block;
+    
+    width: 100%;
+    height: 30px;
+}
+#loginContainer .inputtext input {
+    display: block;
+    float: left;
+    right: 0;
+
+    border: 1px dimgrey solid;
+    padding: 4px;
+
+    font-size: .6rem;
+    width: 160px;
+
+    text-align: center;
+}
+#loginContainer .inputtext span {
+    display:block;
+    float: left;
+    text-align: left;
+
+    width: calc(100% - 170px);
+}
+#loginContainer .inputtext span.longtext {
+    font-size: 80%;
+}
+
+#loginContainer input[type="submit"] {
+    margin-top: 20px;
+    font-size: .8rem;
+    padding: 5px;
+    width: 200px;
+}
+
+#loginContainer .error {
+    display: block;
+    margin-top: 5px;
+    
+    font-size: 16px;
+    color: red;
+}

@@ -1,0 +1,1 @@
+declare function $(obj: string | any): any

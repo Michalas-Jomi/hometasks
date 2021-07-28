@@ -1,0 +1,29 @@
+#container > header {
+    position: relative;
+    text-align: center;
+}
+#container > header > h1 {
+    position: absolute;
+    margin: 5px;
+    left: 20px;
+    top: 10px;
+}
+#container > header > a {
+    position: absolute;
+    right: 40px;
+    top: 20px;
+
+    font-size: 25px;
+
+    padding: 10px 20px;
+
+    border: 1px solid;
+    border-radius: 10px;
+}
+
+#container > header > .nick {
+    position: static;
+    font-size: 30px;
+    padding-top: 20px;
+
+}

@@ -1,0 +1,97 @@
+/* tasks */
+#board ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+    font-size: 1.2rem;
+}
+#board ul > li {
+    margin: 2px 5px;
+    overflow: auto;
+}
+#board ul > li > input {
+    position: absolute;
+    left: 0;
+
+    width: 16px;
+    height: 16px;
+    overflow: hidden;
+
+    background: url('img/redstone_lamp.png');
+}
+#board ul > li > input:after {
+	position: absolute;
+    width: 100%;
+    height: 100%;
+
+    text-align: center;
+    font-size: 13px;
+
+    background-size: contain;
+    background-repeat: no-repeat;
+
+    background: url('img/redstone_lamp.png');
+	content: ' ';
+}
+#board ul > li > input:checked:after {
+    background: url('img/redstone_lamp_on.png');
+	content: '\2714';
+	color: #33ff00;
+}
+
+#board ul > li > span {
+    margin: 2px 14px;
+}
+
+#board .quest {
+    position: absolute;
+    
+    width: 120px;
+
+    border: 1px black solid;
+
+    background: url('img/acacia_planks.png');
+}
+
+
+/* header */
+#board .quest > header {
+    background: url('img/acacia_log.png');
+
+    border-bottom: 1px rgb(39, 64, 70) solid;
+
+    margin-bottom: 10px;
+}
+#board .quest > header:hover {
+    cursor: move;
+}
+
+/* close */
+#board .quest .close {
+    position: absolute;
+    right: 0;
+    top: 0;
+
+    background: transparent;
+    padding: 0;
+    margin: 0;
+    
+    font-size: 4px;
+
+    --border: 1px rgba(0, 0, 0, 0.671) solid;
+    border: none;
+    border-left: var(--border);
+    border-bottom: var(--border);
+
+    --side: 8px;
+    width: var(--side);
+    height: var(--side);
+}
+#board .quest .close:hover {
+    background: rgba(156, 10, 10, 0.5);
+    cursor: pointer;
+}
+#board .quest .close:active {
+    background: rgba(131, 3, 3, 0.753);
+}

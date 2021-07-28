@@ -1,0 +1,54 @@
+html {
+    --mainFont: rgb(189, 228, 226);
+
+    color: var(--mainFont);
+}
+
+body {
+    background: url('img/backgound.png');
+    background-size: cover;
+    backdrop-filter: blur(5px);
+}
+
+#container {
+    background: url('img/spruce_log.png');
+}
+#container > header {
+    width: 100%;
+    height: 100px;
+
+}
+
+#quests {
+    position: relative;
+    float: left;
+
+    width: 200px;
+    min-height: 500px;
+    height: max-content;
+}
+#questsResize {
+    position: absolute;
+    right: 0;
+    top: 0;
+
+    width: 4px;
+    height: calc(100vh - 100px);
+
+    background-color: #522607;
+}
+#questsResize:hover {
+    cursor: ew-resize;
+}
+
+#board {
+    position: relative;
+    float: left;
+
+    width: 1000px;
+    height: calc(100vh - 100px);
+
+    overflow: hidden;
+
+    background: url('img/oak_planks.png');
+}

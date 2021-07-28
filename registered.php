@@ -1,0 +1,1 @@
+Dzięki że jesteś z nami :)
